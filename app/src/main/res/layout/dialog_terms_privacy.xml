@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvPrivacyPolicyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:text="Privacy Policy for SRM Blood Line"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPrivacyPolicyContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the SRM Blood Line. Your privacy matters to us. This Privacy Policy outlines how we manage your information.\n\nWe collect the information you provide, such as your name, mobile number, and date of birth, along with how you use the App. We use this data to help organize blood donation requests, send you important updates, and enhance the App based on usage patterns. Your information won't be sold, but we do share it with our dedicated staff, volunteers assisting in blood donation, and trusted service providers helping us operate the App. While we take measures to safeguard your data, it's important to note that no internet transmission is entirely secure. You have choices - you can update your information in the App's settings and opt out of non-essential messages. By using the App and providing your information, you agree to the terms of this Privacy Policy. If we make significant changes, we'll inform you accordingly. Your agreement to this Privacy Policy is implied when you use the SRM Blood Line.\n\nThis Privacy Policy is effective as of the last updated date mentioned above."
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/acceptButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="Accept"
+        android:textColor="@color/white" />
+
+</LinearLayout>

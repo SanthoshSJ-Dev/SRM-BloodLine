@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:navigationIcon="@drawable/ic_back"> <!-- This line hides the default back arrow -->
+
+        <!-- Custom layout for the Toolbar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start|center_vertical"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
+            <TextView
+                android:id="@+id/toolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About Us"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:paddingTop="20dp"
+        android:src="@drawable/srm_logo"/>
+
+
+    <TextView
+        android:id="@+id/tvAboutUsContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:justificationMode="inter_word"
+        android:padding="16dp"
+        android:text="Welcome to the SRM Blood Line, developed by the Faculty of Science and Humanities at SRM Institute of Science and Technology. Our mission is to connect blood donors with those in need and save lives through voluntary blood donation.\n\nAt SRM Blood Line, we believe that every drop of blood counts. Our platform serves as a bridge between generous donors and individuals in critical need of blood. With your help, we can make a significant impact on the well-being of our communities.\n\nOur dedicated team from the Faculty of Science and Humanities at SRM Institute of Science and Technology works tirelessly to ensure a seamless and secure experience for both donors and recipients. We're committed to maintaining the highest standards of privacy and data security, so you can trust us with your information.\n\nThank you for being a part of the SRM Blood Line community. Together, with the expertise of the Faculty of Science and Humanities, SRM Institute of Science and Technology, we can make a difference!"
+        android:textSize="18sp" />
+</LinearLayout>

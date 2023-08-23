@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1EFEF"
+    tools:context=".SettingsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/frag_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/app_bar_bg" />
+
+        <TextView
+            android:id="@+id/frag_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="SETTINGS"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/frag_title"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bottom_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top_card"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:elevation="20dp"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/textView_personal_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Personal Details"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/settings_btn_background"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+
+                        <ImageView
+                            android:id="@+id/ic_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:src="@drawable/ic_person" />
+
+                        <TextView
+                            android:id="@+id/txtFullName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/ic_name"
+                            android:hint="Loading..."
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/ic_mail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ic_name"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:src="@drawable/ic_email" />
+
+                        <TextView
+                            android:id="@+id/txtEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ic_name"
+                            android:layout_marginTop="20dp"
+                            android:layout_toEndOf="@id/ic_mail"
+                            android:hint="Loading..."
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/ic_dob"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ic_mail"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:src="@drawable/ic_calender" />
+
+                        <TextView
+                            android:id="@+id/txtDob"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ic_mail"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_toEndOf="@id/ic_dob"
+                            android:hint="Loading..."
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/ic_mobile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ic_dob"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:src="@drawable/ic_call" />
+
+                        <TextView
+                            android:id="@+id/txtMobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ic_dob"
+                            android:layout_marginTop="20dp"
+                            android:layout_toEndOf="@id/ic_mobile"
+                            android:hint="Loading..."
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/ic_gender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ic_mobile"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:src="@drawable/ic_gender" />
+
+                        <TextView
+                            android:id="@+id/txtGender"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ic_mobile"
+                            android:layout_marginTop="20dp"
+                            android:layout_toEndOf="@id/ic_gender"
+                            android:hint="Loading..."
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/ic_blood"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ic_gender"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:src="@drawable/ic_blood" />
+
+                        <TextView
+                            android:id="@+id/txtBloodGroup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ic_gender"
+                            android:layout_marginTop="20dp"
+                            android:layout_toEndOf="@id/ic_blood"
+                            android:hint="Loading..."
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnUpdateEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/settings_btn_background"
+                        android:padding="20dp"
+                        android:text="Update Email Address"
+                        android:textAlignment="textStart" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnChangePassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/settings_btn_background"
+                        android:padding="20dp"
+                        android:text="Change Password"
+                        android:textAlignment="textStart" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnAbout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/settings_btn_background"
+                        android:drawableStart="@drawable/ic_settings_info"
+                        android:drawableEnd="@drawable/ic_settings_arrow_right"
+                        android:text="     About"
+                        android:textAlignment="textStart" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnLogout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/settings_btn_background"
+                        android:drawableStart="@drawable/ic_settings_logout"
+                        android:drawableEnd="@drawable/ic_settings_arrow_right"
+                        android:text="    Logout"
+                        android:textAlignment="textStart" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</ScrollView>

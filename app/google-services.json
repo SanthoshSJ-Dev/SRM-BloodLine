@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "783834102405",
+    "firebase_url": "https://donorapp-53545-default-rtdb.firebaseio.com",
+    "project_id": "donorapp-53545",
+    "storage_bucket": "donorapp-53545.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783834102405:android:d6542580a461855cbf47ec",
+        "android_client_info": {
+          "package_name": "com.sjdev.donorapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "783834102405-1nmnrsrhlf1995obkibup726a8eo804m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sjdev.donorapp",
+            "certificate_hash": "954b513f3f11dc0c75ea694611ec2b1343f3eeeb"
+          }
+        },
+        {
+          "client_id": "783834102405-q3dplvoq80m9u2cci779fpuefjd2aa6n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCd2GvqE0cEZ6biFGrwc2yVkbrE815uTfk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "783834102405-q3dplvoq80m9u2cci779fpuefjd2aa6n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

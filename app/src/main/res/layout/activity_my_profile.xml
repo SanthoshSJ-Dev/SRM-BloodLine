@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".SettingsModule.MyProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/top_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/activity_bg" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:onClick="goBack"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:src="@drawable/back_arrow" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/user_profile_illustration" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/top_img"
+            android:paddingStart="30dp"
+            android:paddingTop="30dp"
+            android:paddingEnd="30dp"
+            android:paddingBottom="50dp">
+
+
+            <ImageView
+                android:id="@+id/ic_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_person" />
+
+            <TextView
+                android:id="@+id/show_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/ic_name"
+                android:hint="Loading..."
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/ic_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ic_name"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_email" />
+
+            <TextView
+                android:id="@+id/show_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ic_name"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/ic_mail"
+                android:hint="Loading..."
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/ic_dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ic_mail"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_calender" />
+
+            <TextView
+                android:id="@+id/show_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ic_mail"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toEndOf="@id/ic_dob"
+                android:hint="Loading..."
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/ic_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ic_dob"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_call" />
+
+            <TextView
+                android:id="@+id/show_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ic_dob"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/ic_mobile"
+                android:hint="Loading..."
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/ic_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ic_mobile"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_gender" />
+
+            <TextView
+                android:id="@+id/show_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ic_mobile"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/ic_gender"
+                android:hint="Loading..."
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/ic_blood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ic_gender"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_blood" />
+
+            <TextView
+                android:id="@+id/show_blood_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ic_gender"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/ic_blood"
+                android:hint="Loading..."
+                android:textSize="18sp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/card_white"
+                android:padding="10dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
